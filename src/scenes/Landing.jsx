@@ -2,7 +2,7 @@ import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import profileImage from "../assets/profile-image.png";
+import profileImage from "../assets/profile.png";
 import SocialMediaIcons from '../components/SocialMediaIcons'
 export default function Landing({ setSelectedPage }) {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -24,7 +24,7 @@ export default function Landing({ setSelectedPage }) {
               src={profileImage}
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500
-                    w-full max-w-[400px] md:max-w-[600px]
+                    w-full max-w-[400px] md:max-w-[600px] rounded-xl
                     "
             />
           </div>
@@ -52,20 +52,19 @@ export default function Landing({ setSelectedPage }) {
             }}
           >
             <p className="text-6xl font-playfair z-10 text-center md:text-start">
-              Jane{" "}
+              Luka{" "}
               <span
                 className="xs:relative xs:text-deep-blue xs:font-semibold z-20
                         xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px]
                         before:z-[-1]
                         "
               >
-                Esper
+                Shinjikashvili
               </span>
             </p>
             <p className="mt-10 mb-7 text-sm text-center md:text-start">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old
+             Hello my name is luka,im frontedn developer who works hard to learn new stuff,
+             i hope you like the portfolio.
             </p>
           </motion.div>
 
